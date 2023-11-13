@@ -19,9 +19,12 @@ body {
     top: 90px;
     right: 310PX;
     margin: 10px; 
+    color:white;
+    cursor: pointer;
   }
   h2{
     text-align: left;
+    color :white;
   }
   
   p{

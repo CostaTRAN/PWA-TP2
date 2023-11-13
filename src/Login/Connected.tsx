@@ -1,6 +1,4 @@
-
 import React from 'react';
-import { Link } from "react-router-dom";
 import MarioImg from "../../public/mario.webp"
 import VImg from "../../public/V.webp"
 import HaloImg from "../../public/halo.jpeg"
@@ -12,12 +10,12 @@ import PikachuImg from "../../public/pikachu.png"
 
 import './Connected.css';
 
-function Connected() {
+const Connected = ({ onButtonClick }) => {
   return (
     <div>
       
     <div className="container">
-        <h2 className='deco'><Link style={{color: 'white'}} to="/">Se deconnecter</Link></h2>
+        <h2 className='deco' onClick={onButtonClick}>Se deconnecter</h2>
       <div className="left-section">
     <div className='b'>
       <div className="bottom-cards">
@@ -30,7 +28,7 @@ function Connected() {
       <div className="card11">
       <img src={VImg} className="mario" alt="V" />
         <h2>V</h2>
-      <p>La cybernétique au seervice de l'humain</p>
+      <p>La cybernétique au service de l'humain</p>
       </div>
 
         </div>
@@ -99,7 +97,7 @@ function Connected() {
     </div>
     </div>
   );
-}
+};
 
 
 
